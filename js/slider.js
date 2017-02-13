@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    $('.multiple-items').slick({
+    $('.superslider').slick({
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 4.1,
+    slidesToScroll: 5.0,
     arrows: true
   });
 });
