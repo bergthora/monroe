@@ -1,3 +1,5 @@
+
+
 .banner{
 	background-color: #FAA20E;
 	position: relative;
@@ -69,12 +71,13 @@ h3{
 }
 
 .superslider{
-	margin-left: 131px;
+	margin-left: 20px;
 }
 .slide-single {
 	height: 406px;
 	width: 345px;
 	margin-right: 20px;
+	padding-left: 5px;
 }
 
 .orange{
@@ -138,7 +141,30 @@ font-size: 16px;
 color: #FFFFFF;
 letter-spacing: 0.67px;
 }
+/*--------------------Filtersíða-----------------*/
+.container {
 
+	max-width: 1110;
+}
+
+#exit{
+	height:35px;
+	width:36px;
+	margin-top: 53px;
+	margin-right: 43px;
+}
+#search{
+
+	margin-top: 150px;
+	width: 100%;
+	border-bottom: 2px solid #E7833B;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-radius: 0px;
+	box-shadow: none;
+
+}
 
 @media screen and (max-width: 767px) {
 }
@@ -165,4 +191,11 @@ h2{
 	height: 42px;
 	background-size: 100%;
 
+}
+/*--------------------Filtersíða-----------------*/
+#exit{
+	height:14px;
+	width:14px;
+	margin-top: 22px;
+	margin-right: 22px;
 }
