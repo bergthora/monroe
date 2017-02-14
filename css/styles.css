@@ -1,20 +1,168 @@
-.slider{
-  width:400px;
-  height: 200px;
-  margin:10px;
+.banner{
+	background-color: #FAA20E;
+	position: relative;
+	height: 490px;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+.banner:before, .banner:after {
+	content: "";
+	display: table;
 }
 
-.slider .item{
-  width: 100%;
-  height:100%;
+.banner:after{
+	clear: both;
+}
+.title-bar{
+	background-color: #FAA20E;
+	height: 60px;
+
+}
+.title-bar-left{
+	margin:0 auto;
 }
 
-.yellow{
-	background-color: #FFC600;
+#logo{
+	margin-top:27px;
+	margin-left: 24px;
+	width: 130px;
+	height: 105px;
+	background-repeat: no-repeat;
+	font-size: 0;
+	background-size: 100%;
 }
-.green{
-	background-color: #01843D;
+#search-icon{
+	margin-top: 27px;
+	margin-right: 24px;
+	width: 55px;
+	background-image:url("../images/LEIT.png");
+	height:55px;
+	background-repeat: no-repeat;
+	font-size: 0;
+	background-size: 100%;
 }
+.header{
+	position: absolute;
+	width: 1440px;
+	max-width: 100%;
+}
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 72px;
+	text-align: center;
+	margin-top: 200px;
+}
+h2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 42px;
+	font-weight: 100;
+	text-align: center;
+}
+h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	text-align: left;
+	margin-left: 122px;
+	margin-top: 53px;
+	margin-bottom: 33px;
+}
+
+.superslider{
+	margin-left: 131px;
+}
+.slide-single {
+	height: 406px;
+	width: 345px;
+	margin-right: 20px;
+}
+
 .orange{
-	background-color: #FF5B36;
+	background-color: #F2994A;
+}
+.seemore{
+	border-radius: 10px;
+	padding: 38px 150px;
+	font-size: 40px;
+}
+footer {
+
+background-image: linear-gradient(0deg, #E7833B 0%, #FBA20E 50%);
+height: 305px;
+
+}
+
+#footerlogo {
+
+width: 131px;
+height: auto;
+margin-top: 53px;
+margin-bottom: 47px;
+
+}
+
+.row {
+
+	max-width: 1380px;
+}
+
+footer a {
+text-decoration: none;
+list-style: none;
+font-family: 'Oswald', sans-serif;
+font-weight: 100;
+font-size: 20px;
+color: #FFFFFF;
+letter-spacing: 0.67px;
+padding-right: 20px;
+
+}
+
+footer li {
+
+	padding-right: 18px;
+	padding-left: 18px;
+}
+
+footer ul {
+
+	list-style: none;
+	justify-content: center;
+
+}
+
+footer p {
+font-family: 'Oswald', sans-serif;
+font-weight: 100;
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0.67px;
+}
+
+
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 500px) {
+h1{
+	font-size: 35px;
+}
+h2{
+	display: none;
+}
+#logo{
+	margin-top:13px;
+	margin-left: 16px;
+	width: 52px;
+	height: 42px;
+	background-repeat: no-repeat;
+	font-size: 0;
+	background-size: 100%;
+}
+#search-icon{
+	margin-top: 13px;
+	margin-right: 16px;
+	width: 52px;
+	height: 42px;
+	background-size: 100%;
+
 }
