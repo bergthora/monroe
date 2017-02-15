@@ -163,6 +163,19 @@ letter-spacing: 0.67px;
 	border-radius: 0px;
 	box-shadow: none;
 }
+#pips-slider{
+	margin-left: 320px;
+	margin-right: 320px;
+}
+.ui-slider .ui-slider-handle {
+    height: 81px;
+    width: 81px;
+    margin-left: -40.5px;
+    background:#FAA20E;
+    border-radius: 100px;
+    border-color: transparent;
+}
+
 /*------------------------------------------------MOBILE-----------------------------------------------*/
 @media screen and (max-width: 767px) {
 }
@@ -172,6 +185,10 @@ h1{
 }
 h2{
 	display: none;
+}
+h3{
+	font-size: 18px;
+	margin-left: 28px;
 }
 #logo{
 	margin-top:13px;
