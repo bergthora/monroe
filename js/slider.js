@@ -3,7 +3,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 5.04,
     slidesToScroll: 5.0,
-    arrows: true
+    arrows: true,
     responsive: [
     {
       breakpoint: 480,
@@ -21,5 +21,42 @@ $(document).ready(function(){
 
   
 
-$('#my-slider').show();
-$('#my-slider').foundation('_reflow');
+
+
+$(function() {
+    
+    $("#pips-slider")
+    
+        .slider({
+        
+            range: true,
+            min: 0,
+            max: 10,
+            values: [ 4, 16 ],
+        	step: 1
+        
+        })
+    
+        .slider("pips", {
+        	
+        	first: "label",
+        	last: "label",
+            rest: "label",
+        	step: 1,
+        	labels: false,
+        	prefix: "",
+        	suffix: ""
+        
+        })
+    
+    	.slider("float", {
+        	
+        	handle: true,
+        	pips: false,
+        	labels: false,
+        	prefix: "",
+        	suffix: ""
+        
+    	});
+
+});

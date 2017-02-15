@@ -143,7 +143,6 @@ letter-spacing: 0.67px;
 }
 /*--------------------Filtersíða-----------------*/
 .container {
-
 	max-width: 1110;
 }
 
@@ -153,8 +152,8 @@ letter-spacing: 0.67px;
 	margin-top: 53px;
 	margin-right: 43px;
 }
-#search{
 
+#search{
 	margin-top: 150px;
 	width: 100%;
 	border-bottom: 2px solid #E7833B;
@@ -163,9 +162,8 @@ letter-spacing: 0.67px;
 	border-top: none;
 	border-radius: 0px;
 	box-shadow: none;
-
 }
-
+/*------------------------------------------------MOBILE-----------------------------------------------*/
 @media screen and (max-width: 767px) {
 }
 @media screen and (max-width: 500px) {
