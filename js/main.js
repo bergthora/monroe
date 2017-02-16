@@ -120,21 +120,18 @@ function populateMovieList(movieList, id){
     //
     // let heading = document.createElement("h2");
     // sliderSingleDiv.appendChild(heading);
-    let popularSlider = document.getElementById(id);
-    let sliderSingleDiv = document.createElement("div");
-    sliderSingleDiv.className += "slide-single";
-    popularSlider.appendChild(sliderSingleDiv);
-    let overlayDiv = document.createElement("div");
-    overlayDiv.className = "overlay";
-    sliderSingleDiv.appendChild(overlayDiv);
-
+    let slider = document.getElementById(id);
+    
   for(let i = 0; i < movieList.length; i++)
   {
 
     let container = document.createElement("div");
     let image = document.createElement("img");
     let title = document.createElement("h3");
-    let vote = document.createElement("h4");
+    let voteNumber = document.createElement("h4");
+    let vote = document.createElement("div");
+    vote.className = "rating-circle";
+    vote.append(voteNumber);
     let p = document.createElement("p");
 
     let genreId = genres.filter(genre => movieList[i].genre_ids[0] === genre.id)[0].name;
@@ -146,25 +143,31 @@ function populateMovieList(movieList, id){
     title.innerHTML = movieList[i].title; //original_title hér
     vote.innerHTML = movieList[i].vote;
 
+    let overlayDiv = document.createElement("div");
+    overlayDiv.className = "overlay";
+    container.appendChild(overlayDiv);
+
     container.append(image);
     container.append(title);
     container.append(vote);
-    popularSlider.appendChild(container);
+    slider.appendChild(container);
 
   }
   $("#"+id).slick({
   dots: false,
   infinite: false,
   speed: 300,
-  slidesToShow: 3.1,
+  slidesToShow: 3.5,
   slidesToScroll: 3,
+  centerMode: false,
+  centerPadding: "40px",
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3.1,
         slidesToScroll: 3,
-        infinite: true,
+        infinite: false,
         dots: false
       }
     },
@@ -178,7 +181,7 @@ function populateMovieList(movieList, id){
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1.05,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     }

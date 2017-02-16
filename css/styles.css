@@ -72,6 +72,8 @@ h4{
 
 .slick-slide {
 	position: relative;
+	margin-left: 20px;
+}
 .slide-single {
 	height: 406px;
 	width: 345px;
