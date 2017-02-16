@@ -83,7 +83,7 @@ h3{
 .orange{
 	background-color: #F2994A;
 }
-.seemore{
+.seemore, .search{
 	border-radius: 10px;
 	padding: 38px 150px;
 	font-size: 40px;
@@ -163,7 +163,7 @@ letter-spacing: 0.67px;
 	border-radius: 0px;
 	box-shadow: none;
 }
-#pips-slider{
+#pips-slider1, #pips-slider2{
 	margin-left: 320px;
 	margin-right: 320px;
 }
@@ -171,10 +171,65 @@ letter-spacing: 0.67px;
     height: 81px;
     width: 81px;
     margin-left: -40.5px;
+    margin-top: -30.5px;
     background:#FAA20E;
     border-radius: 100px;
     border-color: transparent;
 }
+/*.ui-slider-handle:after{
+	height: 110px;
+    width: 111px;
+    background: black;
+}*/
+.genrebuttons{
+	margin-bottom: 32px;
+}
+.button.btngenre{
+	width: 338px;
+	height: 95px;
+}
+.btngenre{
+	border-color: #E84B33;
+	border-radius: 10px;
+	background-color: #FFF;
+	color: #E84B33;
+	font-size: 28px;
+	font-weight: 500;
+	margin-right: 16px;
+	margin-left: 16px;
+	margin-bottom: 0px;
+	text-align: center;
+    line-height: 45px;
+}
+.btngenre:hover{
+	background-color: #E84B33;
+	color:#FFF;
+}
+.slædergenre{
+	display: none;
+}
+.button.showmore{
+	border-color: #3D6390;
+	border-radius: 10px;
+	background-color: #FFF;
+	color: #3D6390;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 62px;
+	margin-right: 90px;
+}
+.button.showmore:hover{
+	background-color: #3D6390;
+	color:#FFF;
+}
+.button.btnsearch{
+	margin-top: 115px;
+	margin-bottom: 250px;
+}
+.button.btnsearch:hover{
+	background-color: #FAA20E;
+}
+
 
 /*------------------------------------------------MOBILE-----------------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -213,4 +268,38 @@ h3{
 	width:14px;
 	margin-top: 22px;
 	margin-right: 22px;
+}
+#pips-slider1, #pips-slider2{
+	margin-left: 35px;
+	margin-right: 35px;
+}
+.ui-slider .ui-slider-handle {
+    height: 30px;
+    width: 30px;
+    margin-left: -15.5px;
+    margin-top: -5.5px;
+    background:#FAA20E;
+    border-radius: 100px;
+    border-color: transparent;
+}
+.btngenre{
+	display: none;
+}
+.slædergenre{
+	display: block;
+	background-color: green;
+	height: 20px;
+}
+.button.showmore{
+	display: none;
+}
+.button.orange.seemore.btnsearch{
+	margin-top: 70px;
+	margin-bottom: 47px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 10px;
+	
+	padding-left:110px;
+	padding-right: 110px;
 }
