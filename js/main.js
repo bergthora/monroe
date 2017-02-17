@@ -121,7 +121,7 @@ function populateMovieList(movieList, id){
     // let heading = document.createElement("h2");
     // sliderSingleDiv.appendChild(heading);
     let slider = document.getElementById(id);
-    
+
   for(let i = 0; i < movieList.length; i++)
   {
 
@@ -133,12 +133,11 @@ function populateMovieList(movieList, id){
     vote.className = "rating-circle";
     vote.append(voteNumber);
     let p = document.createElement("p");
-
     let genreId = genres.filter(genre => movieList[i].genre_ids[0] === genre.id)[0].name;
     console.log(genreId)
     p.innerHTML = genreId;
 
-    container.append(p);
+
     image.src = "http://image.tmdb.org/t/p/original" + movieList[i].poster;  //til að fá þessa slóð. Fara inní Configuration á https://developers.themoviedb.org/3/configuration og í Try It Out flipann. Setja þar inní Api keyinn.
     title.innerHTML = movieList[i].title; //original_title hér
     vote.innerHTML = movieList[i].vote;
@@ -147,6 +146,7 @@ function populateMovieList(movieList, id){
     overlayDiv.className = "overlay";
     container.appendChild(overlayDiv);
 
+    container.append(p);
     container.append(image);
     container.append(title);
     container.append(vote);
