@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 $(document).ready(function(){
 
     $('.superslider').slick({
@@ -101,44 +99,61 @@ $(function() {
         	suffix: ""
 
     	});
-
-
 });
 */
->>>>>>> 3a51d0f894bb55be26132cffae157004a05067af
+
 
 $(function(){
-$("#circles-slider")
-
+$("#circles-slider1")
+   
    .slider({
        min: 0,
        max: 10,
-       values: [8, 10],
+       values: [5, 10],
        range: true,
        step: .5
    })
     .slider("pips");
 
 
-$(".slider")
+$(".slider")          
    .slider({
        min: 0,
        max: 10,
    })
-
+                           
    .slider("pips", {
        rest: "label",
        step: 1
    })
-<<<<<<< HEAD
                            
    
 });
 
- 
-=======
+$(function(){
+$("#circles-slider2")
+   
+   .slider({
+       min: 0,
+       max: 10,
+       values: [5, 10],
+       range: true,
+       step: .5
+   })
+    .slider("pips");
 
 
+$(".slider")          
+   .slider({
+       min: 0,
+       max: 10,
+   })
+                           
+   .slider("pips", {
+       rest: "label",
+       step: 1
+   })
+                           
+   
 });
->>>>>>> 7c616ad06fec9bc2b635a4eb478ea8c90b712619
->>>>>>> 3a51d0f894bb55be26132cffae157004a05067af
+
