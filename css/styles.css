@@ -18,10 +18,6 @@
 .title-bar{
 	background-color: #FAA20E;
 	height: 60px;
-
-}
-.title-bar-left{
-	margin:0 auto;
 }
 
 #logo{
@@ -43,8 +39,7 @@
 
 .header{
 	position: absolute;
-	width: 1440px;
-	max-width: 100%;
+	width: 100%;
 }
 h1{
 	font-family: 'Oswald', sans-serif;
@@ -235,19 +230,22 @@ letter-spacing: 0.67px;
 	border-radius: 0px;
 	box-shadow: none;
 }
+#leit{
+	position: relative;
+}
 .ui-slider-range {
  background-color: #FBA20E ;
 }
 
 
-#circles-slider1.ui-slider {
+#circles-sliderRating.ui-slider {
  border-radius: 20px;
  background: transparent;
  border: none;
  height: 10px;
  margin: 1em 4em 4em; }
 
-#circles-slider1 .ui-slider-handle {
+#circles-sliderRating .ui-slider-handle {
  border-radius: 30px;
  height: 30px;
  width: 30px;
@@ -257,31 +255,31 @@ letter-spacing: 0.67px;
  border: 4px solid rgba(250,162,14,.3);
 }
 
-#circles-slider1 .ui-slider-pip {
+#circles-sliderRating .ui-slider-pip {
  top: 3px; }
 
- #circles-slider1 .ui-slider-pip .ui-slider-line {
+ #circles-sliderRating .ui-slider-pip .ui-slider-line {
    width: 4px;
    height: 4px;
    border-radius: 4px;
    margin-left: -2px;
    background: #E5E5E5;
 }
-#circles-slider1 .ui-slider-pip.ui-slider-pip-last .ui-slider-line,
-#circles-slider1 .ui-slider-pip.ui-slider-pip-first .ui-slider-line {
+#circles-sliderRating .ui-slider-pip.ui-slider-pip-last .ui-slider-line,
+#circles-sliderRating .ui-slider-pip.ui-slider-pip-first .ui-slider-line {
    display: none; }
 
-#circles-slider1 .ui-slider-pip.ui-slider-pip-last .ui-slider-label,
-#circles-slider1 .ui-slider-pip.ui-slider-pip-first .ui-slider-label {
+#circles-sliderRating .ui-slider-pip.ui-slider-pip-last .ui-slider-label,
+#circles-sliderRating .ui-slider-pip.ui-slider-pip-first .ui-slider-label {
    margin: 0px; }
 
-#circles-slider1 .ui-slider-pip.ui-slider-pip-first .ui-slider-label {
+#circles-sliderRating .ui-slider-pip.ui-slider-pip-first .ui-slider-label {
    left: -0.6em;
    text-align: right;
    top:-60px;
 }
 
-#circles-slider1 .ui-slider-pip.ui-slider-pip-last .ui-slider-label {
+#circles-sliderRating .ui-slider-pip.ui-slider-pip-last .ui-slider-label {
    left: 1em;
    text-align: left;
    top:-60px;
