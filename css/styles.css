@@ -62,12 +62,11 @@ h3{
 	font-family: 'Oswald', sans-serif;
 	font-size: 35px;
 	color: #4F4F4F;
-
 }
 
 h5{
 	font-family: 'Oswald', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 }
 
@@ -734,11 +733,12 @@ letter-spacing: 0.67px;
 		height: 214px;
 		width: 70%;
 		 -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+  		clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
 		left: 110px;
 		bottom:-3px;
 		position: absolute;
 		background: rgba(255, 255, 255, 0.9);
+		padding: 10px;
 	}
 	.slick-slide p{
 		position: absolute;
