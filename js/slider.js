@@ -104,7 +104,7 @@ $(function() {
 
 
 $(function(){
-$("#circles-slider1")
+$("#circles-sliderRating")
    
    .slider({
        min: 0,
@@ -130,8 +130,10 @@ $(".slider")
    
 });
 
+
+
 $(function(){
-$("#circles-slider2")
+$("#circles-sliderYear")
    
    .slider({
        min: 0,
