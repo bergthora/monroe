@@ -1,16 +1,4 @@
-var loaded = false;
-var time = 300000;
-window.onload = function() {
-     loaded = true;
-     loading = document.getElementById("loading").style.display = "none";
- };
-setTimeout(function() {
-     if(!loaded) {
-         window.location.reload();
-     }
-
-},time);
-
+var movies;
 
 function getMovies(url, id){
   var r = new XMLHttpRequest(); //Jquery buþið að skrifa þetta. klasi sem er gerður til þess að fá kóda annars staðar en af síðunni okkar
@@ -19,13 +7,15 @@ function getMovies(url, id){
     if (r.readyState != 4 || r.status != 200) return; // event sem segir þegar gögnin eru tilbúin á servernum.
     const response = JSON.parse(r.responseText)
 
-    $(".movieImg").click(function(movieid) {
-        movieid = ($(this).attr("id"));
-
-
-        poster.src = response.poster_path;
-        window.location = "singlepage.html";
-        "https://api.themoviedb.org/3/movie/"+movieid+"?api_key=<<api_key>>&language=en-US"
+    $(document).on('click', ".movieImg", function() {
+        let movieId = ($(this).attr("id"));
+        var movie = movies.filter(function(m) {
+            return m.movieId == movieId;
+        })[0];
+        let poster = document.getElementById(movieId);
+        poster.src = movie.poster;
+        window.location = "movie.html";
+        // "https://api.themoviedb.org/3/movie/"+movieid+"?api_key=<<api_key>>&language=en-US"
     })
 
 
@@ -33,6 +23,7 @@ function getMovies(url, id){
 
     }
     initialize(response, id);
+      
   };
   r.send();
 }
@@ -54,7 +45,7 @@ function initialize(movieData, id){
   //hideScreen();
 
   //create movie instances
-  let movies = createMovieInstances(movieData);
+  movies = createMovieInstances(movieData);
 
   //populate movie list
   populateMovieList(movies, id);
@@ -81,7 +72,7 @@ function populateMovieList(movieList, id){
     // image.className = "slide-image";
     image.id = movieList[i].movieId;
     let title = document.createElement("h3");
-    let voteNumber = document.createElement("h5");
+    let voteNumber = document.createElement("h4");
     let vote = document.createElement("div");
     vote.className = "rating-circle";
     vote.append(voteNumber);

@@ -1,3 +1,14 @@
+/*--------------------Loading-----------------*/
+.loading{
+	background-image: linear-gradient(0deg, #E7833B 0%, #FBA20E 50%);
+	position: relative;
+	margin:0 auto;
+	width:100vw;
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
 
 
 .banner{
@@ -30,11 +41,21 @@
 	background-size: 100%;
 	position: absolute;
 }
+
 #search-icon{
 	margin-top: 27px;
 	margin-right: 24px;
 	background-repeat: no-repeat;
+	font-size: 0;
+	background-size: 100%;
 
+
+
+}
+
+#search-icon2 {
+	position: absolute;
+	background-repeat: no-repeat;
 }
 
 .header{
@@ -66,7 +87,7 @@ h5{
 }
 
 p {
-	
+
 font-family: 'Roboto';
 font-style: normal;
 font-weight: normal;
@@ -94,17 +115,16 @@ opacity: 1.00;
 	width: 345px;
 	margin-right: 20px;
 	border: 3px solid white;
-	box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
 
 }
 
 .overlay{
-	height: 35%;
+	height: 40%;
 	width: 100%;
 	bottom:-3px;
 	position: absolute;
 	background: rgba(255, 255, 255, 0.9);
-
 }
 .slick-slide p{
 	position: absolute;
@@ -230,9 +250,27 @@ letter-spacing: 0.67px;
 	border-radius: 0px;
 	box-shadow: none;
 }
+
 #leit{
 	position: relative;
 }
+
+
+#frame {
+
+	max-width: 78%;
+	margin: 0 auto;
+	margin-top: 90px;
+	
+}
+
+.rating {
+
+	margin-bottom: 90px;
+
+}
+
+
 .ui-slider-range {
  background-color: #FBA20E ;
 }
@@ -247,12 +285,13 @@ letter-spacing: 0.67px;
 
 #circles-sliderRating .ui-slider-handle {
  border-radius: 30px;
- height: 30px;
- width: 30px;
- top: -10px;
+ height: 40px;
+ width: 40px;
+ top: -15px;
  margin-left: -11px;
  background-color: #FBA20E ;
- border: 4px solid rgba(250,162,14,.3);
+ border: 4px solid rgba(251, 162, 14, 0.3);
+
 }
 
 #circles-sliderRating .ui-slider-pip {
@@ -373,7 +412,20 @@ letter-spacing: 0.67px;
   	background-size: cover;
   	background-attachment: fixed;
   	position: absolute;
-  	
+
+
+}
+
+#logo2 {
+
+	position: absolute;
+	margin-top:27px;
+	margin-left: 24px;
+	width: 130px;
+	height: 105px;
+	opacity: .7;
+
+
 }
 
 .banner1 img {
@@ -425,7 +477,7 @@ letter-spacing: 0.67px;
 
 
 .circle h2 {
-	
+
 font-family: "Roboto";
 font-style: normal;
 font-weight: 500;
@@ -439,7 +491,7 @@ margin-left: 30px;
 }
 
 .circle p {
-	
+
 font-family: "Roboto";
 font-style: normal;
 font-weight: 500;
@@ -492,7 +544,7 @@ margin-left: 400px;
 
  #year {
 position: absolute;
-margin-left: 100px; 
+margin-left: 100px;
 margin-top: 880px;
 font-family: 'Roboto';
 font-style: normal;
@@ -592,7 +644,7 @@ margin-top: 1250px;
 
 	position: absolute;
 	margin-top: 1340px;
-	
+
 }
 
 #stillphoto2 {
@@ -709,7 +761,7 @@ footer li {
 footer ul {
 
 	list-style: none;
-	justify-content: center;
+	justi: ;fy-content: center;
 
 }
 
@@ -795,6 +847,8 @@ letter-spacing: 0.67px;
 	.row{
 		width:95%;
 	}
+
+@media screen and (max-width: 360px) {
 
 @media screen and (max-width: 460px) {
 h1{
@@ -900,10 +954,41 @@ opacity: 1.00;
 	position: absolute;
 	margin-left: 12px;
 	margin-top: 230px;
-	
+
+
+}
+
+	.movie-text h1{
+
+position: absolute;
+font-family: "Oswald";
+font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 95%;
+color: #4F4F4F;
+opacity: 1.00;
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+
+
+}
+
+.movie-text h2 {
+
+position: absolute;
+font-family: "Oswald";
+font-style: normal;
+font-weight: lighter;
+font-size: 70px;
+line-height: 95%;
+color: #4F4F4F;
+opacity: 1.00;
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+
+
 }
 	.circle {
-		
+
 		position: absolute;
 		margin-left: 310px;
 		margin-top: 240px;
@@ -924,7 +1009,7 @@ opacity: 1.00;
 
 	.movie-text {
 
-		font-size: 
+		font-size:
 	}
 /*--------------------Filtersíða-----------------*/
 #exit{
