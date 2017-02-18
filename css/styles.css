@@ -135,6 +135,13 @@ opacity: 1.00;
 	bottom:15%;
 	left:8%;
 }
+.slick-prev, .slick-next{
+	height:100%;
+	width:2%;
+}
+.slick-prev:before, .slick-next:before{
+	color:black;
+}
 .rating-circle{
 	display: flex;
 	justify-content: center;
