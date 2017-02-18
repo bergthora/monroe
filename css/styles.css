@@ -18,10 +18,6 @@
 .title-bar{
 	background-color: #FAA20E;
 	height: 60px;
-
-}
-.title-bar-left{
-	margin:0 auto;
 }
 
 #logo{
@@ -34,11 +30,17 @@
 	background-size: 100%;
 	position: absolute;
 }
+
 #search-icon{
 	margin-top: 27px;
 	margin-right: 24px;
 	background-repeat: no-repeat;
 
+}
+
+#search-icon2 {
+	position: absolute;
+	background-repeat: no-repeat;
 }
 
 .header{
@@ -99,7 +101,7 @@ opacity: 1.00;
 	width: 345px;
 	margin-right: 20px;
 	border: 3px solid white;
-	box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -711,7 +713,7 @@ footer li {
 footer ul {
 
 	list-style: none;
-	justify-content: center;
+	justi: ;fy-content: center;
 
 }
 
