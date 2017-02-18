@@ -128,7 +128,7 @@ function populateMovieList(movieList, id){
     let container = document.createElement("div");
     let image = document.createElement("img");
     let title = document.createElement("h3");
-    let voteNumber = document.createElement("h4");
+    let voteNumber = document.createElement("h5");
     let vote = document.createElement("div");
     vote.className = "rating-circle";
     vote.append(voteNumber);
