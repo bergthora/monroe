@@ -1,3 +1,16 @@
+var loaded = false;
+var time = 300000;
+window.onload = function() {
+     loaded = true;
+     loading = document.getElementById("loading").style.display = "none";
+ };
+setTimeout(function() {
+     if(!loaded) {
+         window.location.reload();
+     }
+
+},time);
+
 
 function getMovies(url, id){
   var r = new XMLHttpRequest(); //Jquery buþið að skrifa þetta. klasi sem er gerður til þess að fá kóda annars staðar en af síðunni okkar
@@ -11,7 +24,7 @@ function getMovies(url, id){
 
 
         poster.src = response.poster_path;
-        window.location = "movie.html";
+        window.location = "singlepage.html";
         "https://api.themoviedb.org/3/movie/"+movieid+"?api_key=<<api_key>>&language=en-US"
     })
 
