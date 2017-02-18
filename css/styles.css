@@ -48,6 +48,10 @@
 	background-repeat: no-repeat;
 	font-size: 0;
 	background-size: 100%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a6c44e493a6a2e30602fe900b575ceaa5695a7cb
 
 
 }
@@ -407,6 +411,7 @@ letter-spacing: 0.67px;
   	background-attachment: fixed;
   	position: absolute;
 
+<<<<<<< HEAD
 }
 
 #logo2 {
@@ -418,8 +423,24 @@ letter-spacing: 0.67px;
 	height: 105px;
 	opacity: .7;
 
+=======
+>>>>>>> a6c44e493a6a2e30602fe900b575ceaa5695a7cb
 }
 
+<<<<<<< HEAD
+#logo2 {
+
+	position: absolute;
+	margin-top:27px;
+	margin-left: 24px;
+	width: 130px;
+	height: 105px;
+	opacity: .7;
+
+}
+
+=======
+>>>>>>> 0b3ce2e5bb0cf9fdb4c7da388c4c1cecba8b4417
 .banner1 img {
 
 	width: 1480px;
@@ -947,6 +968,7 @@ opacity: 1.00;
 	margin-left: 12px;
 	margin-top: 230px;
 
+<<<<<<< HEAD
 }
 
 	.movie-text h1{
@@ -977,6 +999,8 @@ opacity: 1.00;
 text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 
 
+=======
+>>>>>>> a6c44e493a6a2e30602fe900b575ceaa5695a7cb
 }
 	.circle {
 
