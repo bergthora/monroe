@@ -1,3 +1,14 @@
+/*--------------------Loading-----------------*/
+.loading{
+	background-image: linear-gradient(0deg, #E7833B 0%, #FBA20E 50%);
+	position: relative;
+	margin:0 auto;
+	width:100vw;
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
 
 
 .banner{
@@ -35,6 +46,9 @@
 	margin-top: 27px;
 	margin-right: 24px;
 	background-repeat: no-repeat;
+	font-size: 0;
+	background-size: 100%;
+
 
 }
 
@@ -73,7 +87,7 @@ h5{
 }
 
 p {
-	
+
 font-family: 'Roboto';
 font-style: normal;
 font-weight: normal;
@@ -106,12 +120,11 @@ opacity: 1.00;
 }
 
 .overlay{
-	height: 35%;
+	height: 40%;
 	width: 100%;
 	bottom:-3px;
 	position: absolute;
 	background: rgba(255, 255, 255, 0.9);
-
 }
 .slick-slide p{
 	position: absolute;
@@ -393,7 +406,18 @@ letter-spacing: 0.67px;
   	background-size: cover;
   	background-attachment: fixed;
   	position: absolute;
-  	
+
+}
+
+#logo2 {
+
+	position: absolute;
+	margin-top:27px;
+	margin-left: 24px;
+	width: 130px;
+	height: 105px;
+	opacity: .7;
+
 }
 
 .banner1 img {
@@ -445,7 +469,7 @@ letter-spacing: 0.67px;
 
 
 .circle h2 {
-	
+
 font-family: "Roboto";
 font-style: normal;
 font-weight: 500;
@@ -459,7 +483,7 @@ margin-left: 30px;
 }
 
 .circle p {
-	
+
 font-family: "Roboto";
 font-style: normal;
 font-weight: 500;
@@ -512,7 +536,7 @@ margin-left: 400px;
 
  #year {
 position: absolute;
-margin-left: 100px; 
+margin-left: 100px;
 margin-top: 880px;
 font-family: 'Roboto';
 font-style: normal;
@@ -612,7 +636,7 @@ margin-top: 1250px;
 
 	position: absolute;
 	margin-top: 1340px;
-	
+
 }
 
 #stillphoto2 {
@@ -816,6 +840,8 @@ letter-spacing: 0.67px;
 		width:95%;
 	}
 
+@media screen and (max-width: 360px) {
+
 @media screen and (max-width: 460px) {
 h1{
 
@@ -920,7 +946,7 @@ opacity: 1.00;
 	position: absolute;
 	margin-left: 12px;
 	margin-top: 230px;
-	
+
 }
 
 	.movie-text h1{
@@ -953,7 +979,7 @@ text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 
 }
 	.circle {
-		
+
 		position: absolute;
 		margin-left: 310px;
 		margin-top: 240px;
@@ -974,7 +1000,7 @@ text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 
 	.movie-text {
 
-		font-size: 
+		font-size:
 	}
 /*--------------------Filtersíða-----------------*/
 #exit{
