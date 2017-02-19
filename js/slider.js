@@ -22,140 +22,67 @@ $(document).ready(function(){
 
 
 
-
-/*
-$(function() {
-
-    $("#pips-slider1")
-
-        .slider({
-
-            range: true,
-            min: 0,
-            max: 10,
-            values: [ 4, 10 ],
-        	step: 1
-
-        })
-
-        .slider("pips", {
-
-        	first: "label",
-        	last: "label",
-            rest: "label",
-        	step: 1,
-        	labels: false,
-        	prefix: "",
-        	suffix: ""
-
-        })
-
-    	.slider("float", {
-
-        	handle: true,
-        	pips: false,
-        	labels: false,
-        	prefix: "",
-        	suffix: ""
-
-    	});
-
-
-});
-
-
-$(function() {
-
-    $("#pips-slider2")
-
-        .slider({
-
-            range: true,
-            min: 1888,
-            max: 2017,
-            values: [ 1999, 2017 ],
-        	step: 1
-
-        })
-
-        .slider("pips", {
-
-        	first: "label",
-        	last: "label",
-            rest: "label",
-        	step: 1,
-        	labels: false,
-        	prefix: "",
-        	suffix: ""
-
-        })
-
-    	.slider("float", {
-
-        	handle: true,
-        	pips: false,
-        	labels: false,
-        	prefix: "",
-        	suffix: ""
-
-    	});
-});
-*/
-
-
+/*--------------Filter slæderar------------------*/
+var circles = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",];
 $(function(){
 $("#circles-sliderRating")
    
    .slider({
-       min: 0,
+       min: 1,
        max: 10,
-       values: [5, 10],
+       values: [8, 9],
        range: true,
-       step: .5
+       step: 1
    })
-    .slider("pips");
+    .slider("pips")
+    .slider("float", {
+        label: circles
+    });
+    
 
 
-$(".slider")          
+$(".filter1")          
    .slider({
        min: 0,
        max: 10,
-   })
-                           
-   .slider("pips", {
-       rest: "label",
+       values: [8, 9],
+       range: true,
        step: 1
    })
-                           
-   
+   .slider("pips", {
+      rest: "false",
+      label: circles
+    })
+                                      
 });
-
-
 
 $(function(){
 $("#circles-sliderYear")
    
    .slider({
-       min: 0,
-       max: 10,
-       values: [5, 10],
+       min: 1888,
+       max: 2017,
+       values: [1997, 2017],
        range: true,
-       step: .5
+       step: 5
    })
     .slider("pips");
 
 
-$(".slider")          
+$(".filter2")          
    .slider({
-       min: 0,
-       max: 10,
+       min: 1888,
+       max: 2017,
    })
                            
    .slider("pips", {
        rest: "label",
-       step: 1
-   })
-                           
-   
+       step: 20
+   }) 
 });
+
+
+
+/*----------------Genre slider í mobile-------------*/
+
 
