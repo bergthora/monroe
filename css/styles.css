@@ -858,6 +858,11 @@ h3{
 	font-size: 18px;
 }
 
+.container {
+
+	max-width: 90%;
+}
+
 .heading {
 	margin-top: 35px;
 	margin-left: 25px;
@@ -908,6 +913,14 @@ opacity: 1.00;
 	width: 25px;
 	height: auto 0;
 	background-size: 100%;
+	position: absolute;
+}
+
+#search-icon2{
+
+	width: 22px;
+	height: auto;
+	margin-top: -35px;
 }
 
 .banner1{
@@ -930,15 +943,14 @@ opacity: 1.00;
 .play {
 	width: 74px;
 	height: auto;
-	margin-top: 130px;
+	margin-top: 110px;
 	position: absolute;
 }
 .poster img {
 	width: 167px;
 	height: auto;
 	position: absolute;
-	margin-left: 12px;
-	margin-top: 230px;
+	margin-top: 200px;
 }
 
 .movie-text h1{
@@ -967,8 +979,7 @@ opacity: 1.00;
 
 .circle {
 	position: absolute;
-	margin-left: 310px;
-	margin-top: 240px;
+	margin-top: 195px;
 	height: 40px;
 	width: 40px;
 }
