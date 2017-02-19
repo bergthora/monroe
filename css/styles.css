@@ -132,6 +132,13 @@ p {
 	bottom:15%;
 	left:8%;
 }
+.slick-prev, .slick-next{
+	height:100%;
+	width:2%;
+}
+.slick-prev:before, .slick-next:before{
+	color:black;
+}
 .rating-circle{
 	display: flex;
 	justify-content: center;
@@ -492,7 +499,6 @@ img#leit{
 	opacity: 1.00;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-
 }
 
 .circle {
@@ -503,7 +509,6 @@ img#leit{
 	position: absolute;
 	margin-top: 540px;
 }
-
 
 .circle h2 {
 	font-family: "Roboto";
@@ -560,7 +565,6 @@ img#leit{
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 	margin-top: 750px;
 	margin-left: 400px;
-
 }
 
  #year {
@@ -751,18 +755,15 @@ footer li {
 }
 
 footer ul {
-
 	list-style: none;
 	justi: ;fy-content: center;
-
 }
 
 footer p {
-
-font-family: 'Oswald';
-font-size: 16px;
-color: #FFFFFF;
-letter-spacing: 0.67px;
+	font-family: 'Oswald';
+	font-size: 16px;
+	color: #FFFFFF;
+	letter-spacing: 0.67px;
 
 }
 
@@ -835,12 +836,8 @@ letter-spacing: 0.67px;
 
 /*------------------------------------------------MOBILE-----------------------------------------------*/
 
-@media screen and (max-width: 767px) {
-	.row{
-		width:95%;
-	}
 
-@media screen and (max-width: 360px) {
+
 
 @media screen and (max-width: 460px) {
 h1{
@@ -911,7 +908,6 @@ opacity: 1.00;
 	width: 25px;
 	height: auto 0;
 	background-size: 100%;
-
 }
 
 .banner1{

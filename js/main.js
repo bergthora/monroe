@@ -19,15 +19,16 @@ function getMovies(url, id){
     if (r.readyState != 4 || r.status != 200) return; // event sem segir þegar gögnin eru tilbúin á servernum.
     const response = JSON.parse(r.responseText)
 
-    $(".movieImg").click(function(movieid) {
-        movieid = ($(this).attr("id"));
-
-
-        poster.src = response.poster_path;
-        window.location = "singlepage.html";
-        "https://api.themoviedb.org/3/movie/"+movieid+"?api_key=<<api_key>>&language=en-US"
+    $(document).on('click', ".movieImg", function() {
+         let movieId = ($(this).attr("id"));
+         var movie = movies.filter(function(m) {
+             return m.movieId == movieId;
+         })[0];
+         let poster = document.getElementById(movieId);
+         poster.src = movie.poster;
+         window.location = "movie.html";
+         // "https://api.themoviedb.org/3/movie/"+movieid+"?api_key=<<api_key>>&language=en-US"
     })
-
 
     for (var i = 0; i < response.results.length; i++) {
 
